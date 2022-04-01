@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Mania</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- For NavBar-->
+    <nav>
+        <div id="logo">Movie Mania</div>
+        <div class="nav-links-container">
+            <!--Creating dropdown menu-->
+            <div class="dropdown">
+                <button class="dropbtn">Genres &#9660;</button>
+                <div class="dropdown-content">
+                    <a href="#" class="genres">Action</a>
+                    <a href="#" class="genres">Adventure</a>
+                    <a href="#" class="genres">Animation</a>
+                    <a href="#" class="genres">Comedy</a>
+                    <a href="#" class="genres">Crime</a>
+                    <a href="#" class="genres">Documentary</a>
+                    <a href="#" class="genres">Drama</a>
+                    <a href="#" class="genres">Family</a>
+                    <a href="#" class="genres">Fantasy</a>
+                    <a href="#" class="genres">History</a>
+                    <a href="#" class="genres">Horror</a>
+                    <a href="#" class="genres">Music</a>
+                    <a href="#" class="genres">Mystery</a>
+                    <a href="#" class="genres">Romance</a>
+                    <a href="#" class="genres">Science Fiction</a>
+                    <a href="#" class="genres">TV Movie</a>
+                    <a href="#" class="genres">Thriller</a>
+                    <a href="#" class="genres">War</a>
+                    <a href="#" class="genres">Western</a>
+                </div>
+            </div>
+
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="top-rated">Top Rated</a></li>
+            <li><a href="#" id="popular">Popular</a></li>
+            <li><a href="#" id="upcoming">Upcoming</a></li>
+            
+        </div>
+    </nav>
+
+    <!--For the movies selected-->
+    <div id="title"></div>
+
+    <!--For the list of movies-->
+    <div class="wrapper"></div>
+
+    <!--For popup to load the trailer-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closePopup()">&times;</a>
+        <div class="overlay-content">
+            <iframe id="iframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"
+        integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ=="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    </div>
+</body>
+
+</html>
